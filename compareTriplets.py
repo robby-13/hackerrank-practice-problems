@@ -14,15 +14,18 @@
 
 # Given a and b, determine their respective comparison points.
 
+
 def compareTriplets(a, b):
+    # Initialize a score of 0 for both Alice and Bob
     scoreA = 0
     scoreB = 0
-    scores = []
-    for i, j in zip(a, b):
-        if i > j:
+    scores = []     # Initialize scores list 
+    for i, j in zip(a, b):      # use Python's built-in zip function to traverse a and b at the same time
+        if i > j:       # update Alice's overall score if she scores more than Bob
             scoreA += 1
-        if i < j:
+        if i < j:       # vice-versa for Bob
             scoreB += 1
+    # append the scores to the scores list and return the list
     scores.append(scoreA)
     scores.append(scoreB)
 
@@ -32,3 +35,5 @@ def compareTriplets(a, b):
 list1 = [17, 28, 30]
 list2 = [99, 16, 8]
 print(compareTriplets(list1, list2))
+
+# Progran compiled and passed all 8 test cases :)
