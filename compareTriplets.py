@@ -36,4 +36,4 @@ list1 = [17, 28, 30]
 list2 = [99, 16, 8]
 print(compareTriplets(list1, list2))
 
-# Progran compiled and passed all 8 test cases :)
+# Program compiled and passed all 8 test cases :)
